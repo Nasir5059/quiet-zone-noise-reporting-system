@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiet Zone Noise Reporting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Quiet Zone Noise Reporting System</h2>
+
+<form id="complaintForm">
+    <label>Location:</label>
+    <select id="location" required>
+        <option value="">Select Location</option>
+        <option>Library</option>
+        <option>Hostel</option>
+        <option>Study Hall</option>
+        <option>Exam Block</option>
+    </select>
+
+    <label>Noise Type:</label>
+    <select id="noiseType" required>
+        <option value="">Select Noise Type</option>
+        <option>Loud Talking</option>
+        <option>Music</option>
+        <option>Phone Usage</option>
+        <option>Other</option>
+    </select>
+
+    <label>Description:</label>
+    <textarea id="description" placeholder="Describe the noise issue..." required></textarea>
+
+    <button type="submit">Submit Complaint</button>
+</form>
+
+<p id="message"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
